@@ -1,9 +1,9 @@
 <?php
 // db_config.php - Database configuration and connection file
 
-$servername = "0.0.0.0";
+$servername = "localhost";
 $username = "root";
-$password = "root";
+$password = "";
 $dbname = "gallery_db";
 
 // Create a connection
