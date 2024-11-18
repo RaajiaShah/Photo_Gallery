@@ -76,7 +76,22 @@ The application uses PHP and MySQL for the backend and Bootstrap for the fronten
 
 ## Folder Structure
 
-Photo_Gallery/ ├── css/ │   ├── style.css │   ├── responsive.css ├── js/ │   ├── script.js ├── database/ │   ├── db_config.php ├── upload/ │   ├── (Uploaded Images) ├── index.php ├── upload_image.php ├── update_image.php ├── delete_image.php ├── README.md
+Photo_Gallery/
+├── css/
+│   ├── style.css
+│   ├── responsive.css
+├── js/
+│   └── script.js
+├── database/
+│   └── gallery_db.sql
+├── upload/
+│   └── (Uploaded Images)
+├── db_config.php
+├── index.php
+├── upload_image.php
+├── update_image.php
+├── delete_image.php
+└── README.md
 
 ---
 
