@@ -1,4 +1,5 @@
 <?php
+// update_image.php - Image update functionality
 include 'db_config.php';
 
 $response = ['success' => false];
