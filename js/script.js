@@ -144,7 +144,6 @@ document.getElementById('editForm').addEventListener('submit', function (event) 
                     lightbox.refresh();  
                 }
 
-                Optionally, manually hide the modal
                 const editModal = new bootstrap.Modal(document.getElementById('editModal'));
                 editModal.hide();
             } else {
