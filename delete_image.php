@@ -1,4 +1,5 @@
 <?php
+// delete_image.php - Image delete functionality
 include 'db_config.php';
 
 if (isset($_GET['id'])) {
