@@ -1,0 +1,298 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(135deg, #0c0a9e, #0d012e);
+    border-bottom: 3px solid #fcb232;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.navbar-brand:hover {
+    color: #fcb232;
+}
+
+.navbar-brand i {
+    margin-right: 8px;
+    font-size: 1.5rem; 
+    color: #fcb232;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #0d012e, #0f0cc0);
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+header span{
+    color: #fcb232;
+    font-weight: bold;
+    
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* Upload Form Section */
+.container h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.form-label {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+form input, form button {
+    border-radius: 12px;
+    padding: 12px;
+}
+
+form button {
+    background-color: #fcb232;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #17008a;
+    transform: scale(1.05);
+}
+
+/* Heading */
+h2.heading-with-underline {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px; 
+    color: #0f0cc0; 
+}
+
+.heading-with-underline::after {
+    content: "";
+    position: absolute;
+    width: 60%; 
+    height: 3px; 
+    background-color: #fcb232; 
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+.heading-with-underline:hover::after {
+    width: 100%;
+}
+
+/* Carousel */
+.carousel-inner img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-inner img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.30);
+}
+
+/* Carousel Previous and Next Icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: gray;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Thumbnails Container */
+.d-flex {
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Individual Thumbnail Wrapper */
+.d-flex .thumbnail-item {
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+}
+
+/* Hover Effect on Thumbnail Wrapper */
+.d-flex .thumbnail-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid #0d012e;
+    border-radius: 10px;
+}
+
+/* Thumbnail Images */
+.d-flex .img-thumbnail {
+    transition: opacity 0.3s ease;
+    width: 8vw;
+    height: 6vw;
+    object-fit: cover;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect on Thumbnail Image */
+.d-flex .img-thumbnail:hover {
+    opacity: 0.8;
+}
+
+/* General Icon Button Styling */
+.icon-btn {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effects */
+.icon-btn:hover {
+    background-color: #fcb232;
+    color: #17008a;
+}
+
+/* Positioning */
+.edit-icon {
+    top: 5px;
+    left: 5px;
+}
+
+.delete-icon {
+    top: 5px;
+    right: 5px;
+}
+
+/* Icon Visibility on Hover */
+.thumbnail-item:hover .icon-btn {
+    opacity: 1;
+}
+
+.icon-btn {
+    opacity: 0;
+    /* Icons hidden by default */
+    position: absolute;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #fcb232;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #17008a;
+    transform: scale(1.05);
+}
+
+.btn-warning, .btn-danger {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.btn-warning:hover, .btn-danger:hover {
+    transform: scale(1.05);
+}
+
+.btn-sm {
+    padding: 8px 18px;
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #0d012e, #0c0a9e);
+    color: #fff;
+}
+
+.btn-close {
+    background-color: #FFF;
+}
+
+.modal-body {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.modal-body input[type="file"] {
+    margin-bottom: 10px;
+}
+
+.modal-footer .btn-primary {
+    background-color: #fcb232;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #17008a;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #0c0a9e, #0d012e);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+footer p {
+    margin: 0;
+}

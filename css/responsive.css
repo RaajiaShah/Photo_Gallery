@@ -1,0 +1,88 @@
+/* Media Queries for Mobile and Tablet */
+@media (max-width: 768px) {
+    header {
+        padding: 50px 20px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .container h2 {
+        font-size: 1.8rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
+
+    .carousel-inner img {
+        height: 400px;
+    }
+
+    .d-flex {
+        gap: 8px;
+    }
+
+    .d-flex .m-2 {
+        width: 48%;
+    }
+
+    .d-flex .img-thumbnail {
+        height: 15vw;
+    }
+
+    .btn-sm {
+        padding: 6px 12px;
+    }
+
+    .icon-btn {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .carousel-inner img {
+        height: 20vh;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 30px;
+        height: 30px;
+        background-size: 40%;
+    }
+
+    .container h2 {
+        font-size: 1.5rem;
+    }
+
+    .d-flex .m-2 {
+        width: 15%;
+    }
+
+    .d-flex .img-thumbnail {
+        width: 20vw;
+        height: 15vw;
+    }
+
+    .icon-btn {
+        font-size: 8px;
+    }
+}
