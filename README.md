@@ -38,8 +38,8 @@ The application uses PHP and MySQL for the backend and Bootstrap for the fronten
 
 4. Import the database:
    - Open `phpMyAdmin`.
-   - Create a database named `photo_gallery`.
-   - Import the `photo_gallery.sql` file located in the project folder named database.
+   - Create a database named `gallery_db`.
+   - Import the `gallery_db.sql` file located in the project folder named database.
 
 5. Update `db_config.php` with your database credentials:
     ```php
