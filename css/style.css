@@ -141,6 +141,34 @@ h2.heading-with-underline {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.30);
 }
 
+.carousel-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.carousel-item:hover::before {
+    opacity: 1;
+}
+
+.carousel-item img {
+    position: relative;
+    z-index: 0;
+}
+
 /* Carousel Previous and Next Icons */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
