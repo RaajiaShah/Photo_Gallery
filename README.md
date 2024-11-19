@@ -46,7 +46,7 @@ The application uses PHP and MySQL for the backend and Bootstrap for the fronten
     $host = "localhost";
     $username = "root"; // Replace with your username
     $password = "";     // Replace with your password
-    $dbname = "photo_gallery";
+    $dbname = "gallery_db";
     ```
 
 ---
